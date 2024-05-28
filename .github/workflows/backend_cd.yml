@@ -119,7 +119,7 @@ jobs:
 
       - name: Verify Deployment Status
         run: |
-          if kubectl rollout status deployment/backend -n default --timeout=3m | grep -q 'deployment "backend" successfully rolled out'; then
+          if kubectl rollout status deployment/backend -n default --timeout=5m | grep -q 'deployment "backend" successfully rolled out'; then
             echo "Deployment succeeded."
           else
             echo "Deployment failed."
