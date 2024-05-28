@@ -62,4 +62,4 @@ jobs:
       - name: Build Docker Image
         run: |
           cd starter/backend
-          docker build --tag mp-backend:latest .
+          docker build --no-cache --tag mp-backend:latest .
