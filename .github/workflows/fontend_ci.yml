@@ -22,7 +22,7 @@ jobs:
           node-version: '18'
 
       - name: Install package
-        run: cd starter/frontend && npm npm install --no-cache
+        run: cd starter/frontend && npm install --no-cache
 
       - name: Run lint
         run: cd starter/frontend && npm run lint
