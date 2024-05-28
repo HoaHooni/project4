@@ -5,6 +5,12 @@ on:
     branches:
       - main
     paths:
+      - 'starter/frontend/**' 
+
+  push:
+    branches:
+      - main
+    paths:
       - 'starter/frontend/**'  
   workflow_dispatch:
 
