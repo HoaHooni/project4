@@ -119,7 +119,7 @@ jobs:
           mask-password: 'true'
 
       - name: Update kubeconfig
-        run: aws eks update-kubeconfig --region us-east-1 --name ${{ vars.CLUSTER_NAME }}
+        run: aws eks update-kubeconfig --region us-east-1 --name cluster
 
       - name: Kustomize set image
         env:
