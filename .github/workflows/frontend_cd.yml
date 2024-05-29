@@ -68,7 +68,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    environment: Staging
+    environment: dev
     needs: [lint, test]
 
     steps:
@@ -98,7 +98,7 @@ jobs:
  
   deploy:
     runs-on: ubuntu-latest
-    environment: Staging
+    environment: dev
     needs: build
 
     steps:
