@@ -46,7 +46,7 @@ jobs:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: cd starter/backend && pip install pipenv && pipenv install
+        run: cd starter/backend && pip install pipenv && pipenv install --clear
 
       - name: Run Tests
         run: cd starter/backend && pipenv run test
